@@ -8,14 +8,7 @@ public class Cursoemvideo extends JFrame{
     private JPanel painelMenu;
 
     public Cursoemvideo() {
-        btnClick.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                lblMensagem.setText("Olá, Mundo");
-                //JOptionPane.showMessageDialog(btnClick, "Olá, Mundo!");
-
-            }
-        });
+        btnClick.addActionListener(e -> lblMensagem.setText("Olá, Mundo!"));
     }
 
     public static void main(String[] args) {
